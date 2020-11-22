@@ -2,9 +2,9 @@
 ### Overview
 This is a "homework" project for the first lesson of the [FastAI](https://course19.fast.ai/) course featuring image classification problem. I am a big fan of rock climbing, so I decided to train my ML model to differentiate between five different styles of climbing:
 
-| Outdoor climbing | Indoor climbing |
-| ------------- | ------------- |
-| Bouldering ![Outdoor bouldering](./Readme_files/Climbing_examples/outdoor_bouldering.jpg) | Bouldering ![Indoor bouldering](./Readme_files/Climbing_examples/indoor_bouldering.jpg) |
+| | Outdoor | Indoor |
+| ------------- | ------------- | ------------- |
+| Bouldering | ![Outdoor bouldering](./Readme_files/Climbing_examples/outdoor_bouldering.jpg) | ![Indoor bouldering](./Readme_files/Climbing_examples/indoor_bouldering.jpg) |
 | Sport climbing ![Outdoor sport climbing](./Readme_files/Climbing_examples/outdoor_sport_climbing.jpg) | Sport climbing ![Indoor sport climbing](./Readme_files/Climbing_examples/indoor_sport_climbing.jpg) |
 | Trad climbing ![Outdoor trad climbing](./Readme_files/Climbing_examples/outdoor_trad_climbing.jpg) | |
 
