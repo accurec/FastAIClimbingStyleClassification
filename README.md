@@ -4,7 +4,7 @@ This is a "homework" project for the first lesson of the [FastAI](https://course
 
 | Indoor climbing  | Outdoor climbing |
 | ------------- | ------------- |
-| Bouldering\![Indoor bouldering](./Readme_files/Climbing_examples/indoor_bouldering.jpg) | Bouldering\![Outdoor bouldering](./Readme_files/Climbing_examples/outdoor_bouldering.jpg) |
+| Bouldering\ ![Indoor bouldering](./Readme_files/Climbing_examples/indoor_bouldering.jpg) | Bouldering\ ![Outdoor bouldering](./Readme_files/Climbing_examples/outdoor_bouldering.jpg) |
 | Sport climbing | Sport climbing |
 | | Trad climbing |
 
