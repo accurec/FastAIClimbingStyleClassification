@@ -1,4 +1,13 @@
 # FastAIClimbingStyleClassification
+### Table of contents
+- [Overview](#overview)
+- [Program Execution Flow](#program-execution-flow)
+- [Installation and Setup](#installation-and-setup)
+- [Project Components](#project-components)
+- [SadBoysCompiler Code Components](#sadboyscompiler-code-components)
+- [Lessons Learned](#lessons-learned)
+- [Future Improvements](#future-improvements)
+
 ### Overview
 This is a "homework" project for the first lesson of the [FastAI](https://course19.fast.ai/) course featuring image classification problem. I am a big fan of rock climbing, so I decided to train my ML model to differentiate between five different styles of climbing:
 
@@ -14,10 +23,21 @@ It is a challenging task to identify which style of climbing it is, because pict
 
 So let's see what results we going to get at the end of this project using FastAI library.
 
-### Project components
-
-### Technical details
+### Technical details and project components
+The main file of this project is [Jupyter](https://jupyter.org/) notebook called ```fastai-climbing-style-classifier.ipynb``` and is located in the root folder of the repository. The ccontents of that document are going to be presented below in the next section. The notebook was converted from Jupyter format into markdown format using the [nbconvert](https://nbconvert.readthedocs.io/en/latest/#), so in readme the contents are rather static. The ML model got trained using [Google Colaboratory](https://colab.research.google.com/notebooks/intro.ipynb) to run the Jupyter notebook code and [Google Drive](https://www.google.com/intl/en_zm/drive/) to store image datasets.
+The training, validation and testing image datasets are located in the ```input``` folder of the project. The ML trained models and ready for production packages are located in the ```output``` folder.
 
 ### Jupyter notebook contents
 
+
 ### Lessons learned
+Working on this project allowed me to explore some capabilities of the [FastAI](https://course19.fast.ai/) library. I learned how to prepare training datasets and use them to train my own ML model, which can be used to differentiate between multiple climbing styles. As part of this project I got to write a little bit of code in [Python](https://www.python.org/), learn about Jupyter notebooks, nbconvert and different platforms that allow to train ML models in the cloud by providing access to GPU resources. The cloud based platforms for training the ML models I've explored include:
+1) [Paperspace Gradient](https://gradient.paperspace.com/)
+2) [Kaggle](https://www.kaggle.com/)
+3) [Google Colaboratory](https://colab.research.google.com/notebooks/intro.ipynb)
+4) [Floyd Hub](https://www.floydhub.com/)
+
+I ended up using Google Colaboratory, because it was the most up-to-date platform among the others, it allowed me to easily upload and manage my datasets using Google Drive and it was free :laughing:!
+
+### Ways to improve the ML model and decrease error rate further
+The 
