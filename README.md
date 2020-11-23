@@ -1,12 +1,10 @@
 # FastAIClimbingStyleClassification
 ### Table of contents
 - [Overview](#overview)
-- [Program Execution Flow](#program-execution-flow)
-- [Installation and Setup](#installation-and-setup)
-- [Project Components](#project-components)
-- [SadBoysCompiler Code Components](#sadboyscompiler-code-components)
+- [Technical Details and Project Components](#technical-details-and-project-components)
+- [Jupyter Notebook Contents](#jupyter-notebook-contents)
 - [Lessons Learned](#lessons-learned)
-- [Future Improvements](#future-improvements)
+- [Ways to Improve the ML Model](#ways-to-improve-the-ml-model)
 
 ### Overview
 This is a "homework" project for the first lesson of the [FastAI](https://course19.fast.ai/) course featuring image classification problem. I am a big fan of rock climbing, so I decided to train my ML model to differentiate between five different styles of climbing:
@@ -39,5 +37,5 @@ Working on this project allowed me to explore some capabilities of the [FastAI](
 
 I ended up using Google Colaboratory, because it was the most up-to-date platform among the others, it allowed me to easily upload and manage my datasets using Google Drive and it was free :laughing:!
 
-### Ways to improve the ML model and decrease error rate further
+### Ways to improve the ML model
 The 
