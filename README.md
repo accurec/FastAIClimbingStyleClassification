@@ -564,4 +564,4 @@ Working on this project allowed me to explore some capabilities of the [FastAI](
 I ended up using Google Colaboratory, because it was the most up-to-date platform among the others, it allowed me to easily upload and manage my datasets using Google Drive and it was free :laughing:!
 
 ### Ways to improve the ML model
-As mentionaed in the __Conclusion__ section of the Jupyter notebook. a few ways to improve the model is to add more data to training and validation sets, as well as adjust them in a way that the CNN is learning to recognize climbers (plus their environment) and make predictions based on that instead of making predictions based on just the environment the climbers are in.
+As mentionaed in the __Conclusion__ section of the Jupyter notebook, a few ways to improve the model is to add more data to training and validation sets, as well as adjust them in a way that the CNN is learning to recognize climbers (plus their environment) and make predictions based on that instead of making predictions based on just the environment the climbers are in.
