@@ -22,12 +22,12 @@ It is a challenging task to identify which style of climbing it is, because pict
 So let's see what results we going to get at the end of this project using FastAI library.
 
 ### Technical details and project components
-The main file of this project is [Jupyter](https://jupyter.org/) notebook called ```fastai-climbing-style-classifier.ipynb``` and is located in the root folder of the repository. The ccontents of that document are going to be presented below in the next section. The notebook was converted from Jupyter format into markdown format using the [nbconvert](https://nbconvert.readthedocs.io/en/latest/#), so in readme the contents are rather static. The ML model got trained using [Google Colaboratory](https://colab.research.google.com/notebooks/intro.ipynb) to run the Jupyter notebook code and [Google Drive](https://www.google.com/intl/en_zm/drive/) to store image datasets.
+The main file of this project is [Jupyter](https://jupyter.org/) notebook called ```fastai-climbing-style-classifier.ipynb``` and is located in the root folder of the repository. The contents of that document are going to be presented below in the next section for the sake of not making the reader to go look into separate file :smiley:. The notebook was converted from Jupyter format into markdown format using the [nbconvert](https://nbconvert.readthedocs.io/en/latest/#), so in readme the contents are rather static. The ML model got trained using [Google Colaboratory](https://colab.research.google.com/notebooks/intro.ipynb) to run the Jupyter notebook code and [Google Drive](https://www.google.com/intl/en_zm/drive/) to store image datasets.
 The training, validation and testing image datasets are located in the ```input``` folder of the project. The ML trained models and ready for production packages are located in the ```output``` folder.
 
 ### Jupyter notebook contents
 
--------------------------------------------------------------------------------------
+---
 
 # **Setup**
 
@@ -159,7 +159,7 @@ print(data.classes)
     ['indoor_bouldering', 'indoor_sport_climbing', 'outdoor_bouldering', 'outdoor_sport_climbing', 'outdoor_trad_climbing']
     
 
-Training set has around 70 images for the following labels: 'indoor_bouldering', 'indoor_sport_climbing', 'outdoor_bouldering', 'outdoor_sport_climbing'. It has around 40 images for the 'outdoor_trad_climbing' label. For the validation sets we have 25 images for the 'indoor_bouldering', 'indoor_sport_climbing', 'outdoor_bouldering', 'outdoor_sport_climbing' labels and 10 images for the 'outdoor_trad_climbing' label. This discrepancy is bacause it is harder to find good quality pictures of that climbing style on the Internet :)
+Training set has around 70 images for the following labels: 'indoor_bouldering', 'indoor_sport_climbing', 'outdoor_bouldering', 'outdoor_sport_climbing'. It has around 40 images for the 'outdoor_trad_climbing' label. For the validation sets we have 25 images for the 'indoor_bouldering', 'indoor_sport_climbing', 'outdoor_bouldering', 'outdoor_sport_climbing' labels and 10 images for the 'outdoor_trad_climbing' label. This discrepancy is bacause it is harder to find good quality pictures of that climbing style on the Internet :smiley:
 
 Let's examine what we've got in our training set.
 
@@ -552,7 +552,7 @@ For the test set of 12 images we've got only 66.66% of images classified correct
 We've used realively small amount of data to train image classification ML model to recognize five different types of climbing styles. In the process of training and analysis of the model we were able to make an interesting observation that the model actually learned to differentiate between different classes based on the environment of each picture and not the climbers themselves. This actually makes sense, because the environments is what stays relatively the same between different images within one class, while climbers are very different in every image. To address that, one proposed approach I can think of is to actually eliminate the background from the equation either by switching it to black and white color or make everything except the climbers of completely the same color. On top of that having more data in training and validation datasets could potentially help as well.
 All things considered (model training time, amount of training and test data, training accuracy and test accuracy), I think the final result of 66% accuracy is not bad at all, and I am quite happy with what I was able to learn from the process of working on this assignment.
 
--------------------------------------------------------------------------------------
+---
 
 ### Lessons learned
 Working on this project allowed me to explore some capabilities of the [FastAI](https://course19.fast.ai/) library. I learned how to prepare training datasets and use them to train my own ML model, which can be used to differentiate between multiple climbing styles. As part of this project I got to write a little bit of code in [Python](https://www.python.org/), learn about Jupyter notebooks, nbconvert and different platforms that allow to train ML models in the cloud by providing access to GPU resources. The cloud based platforms for training the ML models I've explored include:
@@ -564,4 +564,4 @@ Working on this project allowed me to explore some capabilities of the [FastAI](
 I ended up using Google Colaboratory, because it was the most up-to-date platform among the others, it allowed me to easily upload and manage my datasets using Google Drive and it was free :laughing:!
 
 ### Ways to improve the ML model
-The 
+As mentionaed in the __Conclusion__ section of the Jupyter notebook. a few ways to improve the model is to add more data to training and validation sets, as well as adjust them in a way that the CNN is learning to recognize climbers (plus their environment) and make predictions based on that instead of making predictions based on just the environment the climbers are in.
