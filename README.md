@@ -26,6 +26,9 @@ The main file of this project is [Jupyter](https://jupyter.org/) notebook called
 The training, validation and testing image datasets are located in the ```input``` folder of the project. The ML trained models and ready for production packages are located in the ```output``` folder.
 
 ### Jupyter notebook contents
+
+-------------------------------------------------------------------------------------
+
 # **Setup**
 
 First we connect our Google Drive to write and read data to/from. When the command is executed, we are asked to provide the key for the Google Drive user account that we are going to be using.
@@ -288,22 +291,6 @@ learner.recorder.plot()
 
 
 
-    <div>
-        <style>
-            /* Turns off some styling */
-            progress {
-                /* gets rid of default border in Firefox and Opera. */
-                border: none;
-                /* Needs to be in here for Safari polyfill so background images work as expected. */
-                background-size: auto;
-            }
-            .progress-bar-interrupted, .progress-bar-interrupted::-webkit-progress-bar {
-                background: #F44336;
-            }
-        </style>
-      <progress value='3' class='' max='6' style='width:300px; height:20px; vertical-align: middle;'></progress>
-      50.00% [3/6 03:09<03:09]
-    </div>
 
 <table border="1" class="dataframe">
   <thead>
@@ -336,23 +323,6 @@ learner.recorder.plot()
     </tr>
   </tbody>
 </table><p>
-
-    <div>
-        <style>
-            /* Turns off some styling */
-            progress {
-                /* gets rid of default border in Firefox and Opera. */
-                border: none;
-                /* Needs to be in here for Safari polyfill so background images work as expected. */
-                background-size: auto;
-            }
-            .progress-bar-interrupted, .progress-bar-interrupted::-webkit-progress-bar {
-                background: #F44336;
-            }
-        </style>
-      <progress value='15' class='' max='19' style='width:300px; height:20px; vertical-align: middle;'></progress>
-      78.95% [15/19 00:51<00:13 0.6037]
-    </div>
 
 
 
@@ -549,8 +519,18 @@ for idx in range(testData.items.size):
 ```
 
 
-    Output hidden; open in https://colab.research.google.com to view.
-
+![png](Readme_files/Pred_1.png)
+![png](Readme_files/Pred_2.png)
+![png](Readme_files/Pred_3.png)
+![png](Readme_files/Pred_4.png)
+![png](Readme_files/Pred_5.png)
+![png](Readme_files/Pred_6.png)
+![png](Readme_files/Pred_7.png)
+![png](Readme_files/Pred_8.png)
+![png](Readme_files/Pred_9.png)
+![png](Readme_files/Pred_10.png)
+![png](Readme_files/Pred_11.png)
+![png](Readme_files/Pred_12.png)
 
 
 ```python
@@ -572,6 +552,7 @@ For the test set of 12 images we've got only 66.66% of images classified correct
 We've used realively small amount of data to train image classification ML model to recognize five different types of climbing styles. In the process of training and analysis of the model we were able to make an interesting observation that the model actually learned to differentiate between different classes based on the environment of each picture and not the climbers themselves. This actually makes sense, because the environments is what stays relatively the same between different images within one class, while climbers are very different in every image. To address that, one proposed approach I can think of is to actually eliminate the background from the equation either by switching it to black and white color or make everything except the climbers of completely the same color. On top of that having more data in training and validation datasets could potentially help as well.
 All things considered (model training time, amount of training and test data, training accuracy and test accuracy), I think the final result of 66% accuracy is not bad at all, and I am quite happy with what I was able to learn from the process of working on this assignment.
 
+-------------------------------------------------------------------------------------
 
 ### Lessons learned
 Working on this project allowed me to explore some capabilities of the [FastAI](https://course19.fast.ai/) library. I learned how to prepare training datasets and use them to train my own ML model, which can be used to differentiate between multiple climbing styles. As part of this project I got to write a little bit of code in [Python](https://www.python.org/), learn about Jupyter notebooks, nbconvert and different platforms that allow to train ML models in the cloud by providing access to GPU resources. The cloud based platforms for training the ML models I've explored include:
